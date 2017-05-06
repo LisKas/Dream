@@ -1,0 +1,799 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+*{
+    box-sizing: border-box;
+}
+/*////////////////////////////////////////////////////////////////////*/
+
+.container {
+    max-width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+
+}
+/*///////////////////////////////////////////////////////////////////*/
+.promo {
+    max-width: 100%;
+    background-image: url('../img/Dreamshare_bg.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    text-align:center;
+    font-family: montserrat;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.header a {
+    display: inline-block;
+    margin-left: 7px;
+    margin-right: 7px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 17px;
+    border: 2px solid transparent;
+
+
+}
+.header a:hover{
+    border-color: #fff;
+    border-radius: 20px;
+}
+ 
+  h1 {
+    margin-top: 160px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+
+
+ }
+.promo_text>h2{
+    font-family: montserrat;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin:0 0 40px 0;
+     
+}
+.promo_text p{
+    font-family: roboto;
+    font-size: 18px;
+    margin: 0 0 30px;
+}
+
+/*..................................................................*/
+ @media screen and (min-width: 760px) {
+
+.promo {
+    background-image: url('../img/Dreamshare_bg_tablet.png');
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 235px;
+    padding-top: 40px;
+    }
+
+h1 {
+    float: left;
+    margin: 0;
+}
+
+.header{
+    float: right;
+}
+
+.promo_text>h2{
+    font-size: 52px;
+    margin-top: 150px;
+}
+
+.promo_text p{
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+ }
+/*.................................................................*/
+@media screen and (min-width: 1430px) {
+.promo {
+    background-image: url('../img/Dreamshare_bg_desktop.png');
+    padding-left: 450px;
+    padding-right: 450px;
+    padding-bottom: 235px;
+    padding-top: 40px;
+}
+}
+
+/*////////////////////////////////////////////////////////////*/
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-family: montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #ff4e50;
+    border-radius: 30px;
+    padding: 15px 50px;
+
+
+}
+.btn-border {
+
+    background-color: transparent;
+    padding: 15px 70px;
+    border:2px solid #ff4e50;
+    color: #ff4e50;
+    margin-top:40px;
+}
+.btn-submit{
+    padding: 15px 80px;
+    border: none;
+
+}
+/*.................................................*/
+@media screen and (min-width: 760px) {
+.button {
+    padding: 15px 25px;
+}
+.btn-border {
+   
+    padding:15px 30px;
+}
+}
+/*.................................................*/
+
+
+
+/*/////////////////////////////////////////////////////////////////*/
+.title {
+
+    font-family: montserrat;
+    font-size: 22px;
+    margin:40px 0 20px 0;
+    
+}
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 3px 0 7px #000;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+/*..................................................*/
+@media screen and (min-width: 760px) {
+ .title {
+     margin:100px 0 40px 0;
+ }
+
+}
+/*////////////////////////////////////////////////////////////////////*/
+.step_1 {
+    background-image: url('../img/step/step1.png');
+} 
+    
+.step_2 {
+    background-image: url('../img/step/step2.png');
+
+}
+.step_3 {
+    background-image: url('../img/step/step3.png');
+}
+.steps {
+    background-size: cover;
+    background-repeat:no-repeat;
+    color: #fff;
+    font-family: montserrat;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 240px;
+    text-align:start;
+
+
+}
+.steps::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+96 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 96%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 96%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 96%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+} 
+
+.position{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+}
+
+.check {
+   display: inline-block;
+   background-color: #ff4e50;
+   border-radius: 20px;
+   padding: 0 10px;
+   
+}
+
+.step p {
+    font-family: roboto;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    text-shadow: 3px 0 7px #000;
+    
+}
+/*....................................................*/
+@media screen and (min-width: 760px) {
+    
+
+ .steps {
+    float: left;
+    width: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 400px;
+    
+   
+
+   
+ }
+ .step_1 {
+    background-image: url('../img/step/step1_tablet.png');
+   
+}
+
+.step_2 {
+    background-image: url('../img/step/step2_tablet.png');
+ 
+    
+
+}
+.step_3 {
+    background-image: url('../img/step/step3_tablet.png');
+}
+  
+
+}
+/*........................................................*/
+
+
+/*//////////////////////////////////////////////////////////*/
+.partner{
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+
+.about-partner{
+    width: 210px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.foto{
+   position: relative; 
+   display: inline-block; 
+}
+.foto img {
+    max-width: 100%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+   
+
+}
+
+#icon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+
+.about-partner h3 {
+   font-size: 14px;
+   text-shadow: none;
+   margin-top: 20px;
+}
+.about-partner p {
+    color: #8f8f8f;
+    font-family: roboto;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+/*..................................................*/
+
+/*////////////////////////////////////////////////////*/
+
+.idea {
+    color: #fff;
+    font-family: montserrat;
+    font-size: 22px;
+    font-weight: 700;
+    text-shadow: 3px 0 7px #000;
+    background-size: cover;
+    padding:50px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    
+    
+  
+
+}
+
+.ideas_1{
+    background-image: url('../img/ideas/idea1.png');
+}
+.ideas_2{
+    background-image: url('../img/ideas/idea2.png');
+}
+.ideas_3{
+    background-image: url('../img/ideas/idea3.png');
+    
+}
+.ideas_4{
+    background-image: url('../img/ideas/idea4.png');
+}
+.ideas_5{
+    background-image: url('../img/ideas/idea5.png');
+}
+.ideas_6{
+    background-image: url('../img/ideas/idea6.png');
+}
+.ideas_7{
+    background-image: url('../img/ideas/idea7.png');
+    margin-bottom: 0;
+}
+
+/*..................................................*/
+@media screen and (min-width: 760px) {
+
+.idea {
+   float:left;
+   width:30%;
+   margin-left:10px;   
+   height:310px; 
+   padding-top:140px ;
+   padding-bottom:140px;
+  
+
+}
+
+.ideas_1{
+    background-image: url('../img/ideas/idea1_tablet.png');
+   
+}
+.ideas_2{
+    background-image: url('../img/ideas/idea2_tablet.png');
+    
+}
+.ideas_3{
+    background-image: url('../img/ideas/idea3_tablet.png');
+    
+   
+
+}
+.ideas_4{
+    background-image: url('../img/ideas/idea4_tablet.png');
+    
+ }
+.ideas_5{
+    background-image: url('../img/ideas/idea6_tablet.png');
+    width:61%;
+   
+}
+.ideas_6{
+    background-image: url('../img/ideas/idea7_tablet.png');
+   width:61%;
+    
+}
+.ideas_7{
+    background-image: url('../img/ideas/idea5_tablet.png');
+   
+}
+}    
+/*/////////////////////////////////////////////////////////////////////////*/
+
+.form {
+    display:block;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.form p {
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+input {
+    font-family: roboto;
+    font-size: 14px;
+    font-weight: 300;
+    padding:15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+/*..............................................*/
+
+@media screen and (min-width: 760px) {
+.form {
+    padding-bottom: 100px;
+}
+
+input {
+    width: 25%;
+}
+}
+/*/////////////////////////////////////////////////////////////*/
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-top: 5px solid #ff4e50;
+    
+
+}
+
+.footer p{
+    margin: 0;
+    margin-bottom: 20px;
+    color: #ff4e50;
+    font-size: 16px;
+    font-weight: 700;
+  
+}
+
+.footer span  {
+    display: block;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer ul{
+    list-style-type: none;
+    margin: 10px 0 20px 0;
+    padding: 0;
+    
+}
+
+.footer ul+ span {
+    margin-bottom: 20px;
+}
+
+.footer li{
+    display: inline-block;
+    padding-left: 5px;
+}
+.footer li>a {
+    text-decoration: none;
+    color: #989898;
+}
+/*..................................................*/
+@media screen and (min-width: 870px) {
+
+
+.footer p{
+    float: left;
+    width: 240px;
+    text-align:start;
+} 
+
+.footer img{
+    float: right;
+}   
+
+.footer ul{
+    float: left;
+    width: 240px;
+    margin: 0;
+    text-align:start;
+}
+.footer li{
+    display: block;
+    margin-top: 12px;
+}
+
+.footer ul+ span {
+    
+    display: inline-block;
+    width: 240px;
+    text-align: start;
+}
+}
+
+/*//////////////////////////////////////////////////////*/
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
